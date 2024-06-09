@@ -22,7 +22,7 @@ const PaymentStatus = ({ orderEmail, orderId, isPaid }: PaymentStatusProps) => {
   );
 
   useEffect(() => {
-    if (data?.isPaid) router.refresh;
+    if (data?.isPaid) router.refresh();
   }, [data?.isPaid, router]);
 
   return (
